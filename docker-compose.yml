@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+    nginx:
+      build : .
+      ports :
+      - "80:80"
+      - "9145:9145"
+      volumes :
+      - ./nginx:/etc/nginx/conf.d
